@@ -137,6 +137,7 @@
                 <file name="weixin/WeixinApi.js"/>
                 <file name="weixin/weixindata.js"/>
                 <file name="src/config.js"/>
+                <file name="src/decorate.js"/>
                 <file name="main.js"/>
 
             </sources>
