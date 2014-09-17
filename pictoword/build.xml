@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="D:\repos\revival\html5\pictoword" default="compile">
+<project name="Javascript compress project" basedir="C:\Users\Administrator\.ssh\revival\html5\pictoword" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
-             classpath="D:\cocos2d\cocos2d-js-v3.0-rc3\tools\cocos2d-console\bin\..\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
+             classpath="f:\cocos2d\cocos2d-js-v3.0-rc3\tools\cocos2d-console\bin\..\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
 
     <target name="compile">
         <jscomp compilationLevel="advanced" 
                 warning="quiet"
                 debug="false" 
-                output="D:\repos\revival\html5\pictoword\publish\html5/game.min.js"
+                output="C:\Users\Administrator\.ssh\revival\html5\pictoword\publish\html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="D:\repos\revival\html5\pictoword\frameworks\cocos2d-html5">
+            <sources dir="C:\Users\Administrator\.ssh\revival\html5\pictoword\frameworks\cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="CCDebugger.js"/>
                 <file name="cocos2d/core/utils/BinaryLoader.js"/>
@@ -116,9 +116,30 @@
                 <file name="extensions/ccui/uiwidgets/scroll-widget/UIScrollView.js"/>
                 <file name="extensions/ccui/uiwidgets/scroll-widget/UIListView.js"/>
                 <file name="extensions/ccui/uiwidgets/scroll-widget/UIPageView.js"/>
+                <file name="cocos2d/render-texture/CCRenderTexture.js"/>
+                <file name="cocos2d/progress-timer/CCProgressTimer.js"/>
+                <file name="cocos2d/progress-timer/CCActionProgressTimer.js"/>
+                <file name="extensions/gui/control-extension/CCControl.js"/>
+                <file name="extensions/gui/control-extension/CCControlButton.js"/>
+                <file name="extensions/gui/control-extension/CCControlUtils.js"/>
+                <file name="extensions/gui/control-extension/CCInvocation.js"/>
+                <file name="extensions/gui/control-extension/CCScale9Sprite.js"/>
+                <file name="extensions/gui/control-extension/CCMenuPassive.js"/>
+                <file name="extensions/gui/control-extension/CCControlSaturationBrightnessPicker.js"/>
+                <file name="extensions/gui/control-extension/CCControlHuePicker.js"/>
+                <file name="extensions/gui/control-extension/CCControlColourPicker.js"/>
+                <file name="extensions/gui/control-extension/CCControlSlider.js"/>
+                <file name="extensions/gui/control-extension/CCControlSwitch.js"/>
+                <file name="extensions/gui/control-extension/CCControlStepper.js"/>
+                <file name="extensions/gui/control-extension/CCControlPotentiometer.js"/>
+                <file name="extensions/gui/scrollview/CCScrollView.js"/>
+                <file name="extensions/gui/scrollview/CCSorting.js"/>
+                <file name="extensions/gui/scrollview/CCTableView.js"/>
 
             </sources>
             <sources dir="${basedir}">
+                <file name="src/config.js"/>
+                <file name="src/application.js"/>
                 <file name="src/resource.js"/>
                 <file name="src/storage.js"/>
                 <file name="src/firstscene.js"/>
@@ -136,8 +157,8 @@
                 <file name="src/rankscene.js"/>
                 <file name="weixin/WeixinApi.js"/>
                 <file name="weixin/weixindata.js"/>
-                <file name="src/config.js"/>
                 <file name="src/decorate.js"/>
+                <file name="src/user.js"/>
                 <file name="main.js"/>
 
             </sources>
